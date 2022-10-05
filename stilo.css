@@ -1,0 +1,182 @@
+*{
+    margin: 0;
+    padding:0;
+  }
+  
+  @keyframes pisca{
+    0%{ opacity: 0.2;}
+    50%{ opacity:1;}
+    100%{ opacity:0.2;}
+    
+    
+  }
+  body{
+    background-color: #5555;
+    margin:0;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+   
+     
+  }
+  .section1{
+    height:500px;
+    border:1px solid green;
+    background-color:#555;
+    /* border */
+  }
+  .urna{
+    margin-top:10px 80px;
+    /* margin: auto; */
+    height: 450px;
+    width: 900px;
+    background-color:#dbd5c9;
+    padding:30px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .tela{
+    width:800px;
+    height:420px;
+    background:linear-gradient(to right, #e8e8e8, #c1c1c1);
+    margin-left:30px;
+    border-radius:5px;
+    border:10px solid rgb(184, 169, 140);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px ;
+    border-radius: 6px;
+    
+   
+    
+      
+    }
+  .teclado{
+    background-color:#403a3a;
+    margin-left:30px;
+    height: 420px;
+    box-shadow: 7px 7px 7px #454343;
+    
+    
+  }
+  .teclado--linha{
+    display:flex;
+    justify-content:center;
+    align-items:flex-end;
+  }
+  .teclado--botao{
+    background-color:black;
+    box-shadow: 7px 7px 7px #787171;
+    color:#fff;
+    width:75px;
+    height:45px;
+    font-size:20px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin:15px 10px;
+    cursor:pointer;
+    border-left:2px solid lightgrey;
+    border-bottom:2px solid lightgrey;
+    border-radius: 6px;
+  }
+  .botao--corrige{
+    width:70px;
+    height:50px;
+    font-size:20px;
+    background-color:orange;
+    color:white;
+    border-left:2px solid rgb(232, 207, 232);
+    border-bottom:2px solid #101;
+  }
+  .botao--branco{
+    width:100px;
+    height:50px;
+    background-color:white;
+    color:black;
+    font-size:20px;
+    border-left:2px solid #101;
+    border-bottom:2px solid #101;
+  }
+  .botao--confirm{
+    width:110px;
+    height:50px;
+    font-size:20px;
+    background-color:green;
+    color:white;
+    border-left:2px solid #101;
+    border-bottom:2px solid #101;
+  }
+  .div--1{
+    flex:1;
+    display:flex;
+    border:10px solid rgb(184, 169, 140);
+  }
+  .d-1-left{
+    flex:1;
+    display:flex;
+    flex-direction:column;
+    /* width: 200px; */
+  }
+  .d-1-1{
+    height:50px;
+     display:flex;
+    align-items:center;
+      margin:20px;
+      
+  }
+  .d-1-2{
+    height:50px;
+     display:flex;
+    align-items:center;
+    justify-content:center;
+    margin-left:20px;
+   }
+  .d-1-3{
+    height:50px;
+    display:flex;
+    justify-content:center;
+    margin-left:20px;
+    
+      
+    }
+    .numero{
+      display:inline-block;
+      width:30px;
+      height:40px;
+      border:1px solid black;
+      text-align:center;
+      line-height:40px;
+          
+    }
+  .pisca{
+    animation-name:pisca;
+    animation-duration:1s;
+    /* animation-interation-count:infinite; */
+  }
+   
+  .d-1-4{
+    flex:1;
+     display:flex; 
+    align-items:center;
+    line-height:30px;
+    margin-left:20px;
+   
+    
+  }
+  .d-1-right{
+    
+    width:90px;
+    
+  }
+  .div--2{
+    height: 50px;
+    font-size:12px;
+    border-top:2px solid black;
+    padding-left:10px;
+    margin-left:20px;
+   
+    
+  }
