@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 @keyframes pisca {
@@ -25,32 +26,32 @@ body {
  
 }
 
-/* .section1 {
+.section1 {
   height: 500px;
   border: 1px solid green;
   background-color: #555;
  
-} */
+}
 
 .urna {
   margin-top: 10px 80px;
   margin: auto;
-  height: 450px;
+  height: 470px;
   width: 900px;
   background-color: #dbd5c9;
   padding: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
-   border-radius: 30px;
+  border-radius: 30px;
 }
 
 .tela {
-  width: 800px;
-  height: 420px;
+  width: 790px;
+  height: 450px;
   background: linear-gradient(to right, #e8e8e8, #c1c1c1);
   margin-left: 30px;
- box-shadow: -10px  8px 60px #555;
+  box-shadow: -10px  8px 60px #555;
   border: 10px solid rgb(184, 169, 140);
   display: flex;
   flex-direction: row;
@@ -67,10 +68,10 @@ body {
 .teclado {
   background-color: #403a3a;
   margin-left: 30px;
-  height: 420px;
-  box-shadow: 7px 7px 7px #454343;
+  height: 450px;
+  box-shadow: 7px 7px 7px #2c2a2a;
   border-radius: 30px;
-
+  opacity:0.8;
 
 }
 
@@ -127,25 +128,28 @@ body {
 }
 
 .div--1 {
-   flex: 1;
-   display: flex;
+  flex: 1;
+  display: flex;
+  position: relative;
   flex-direction: column;
   border: 10px solid rgb(184, 169, 140);
-  box-shadow: 7px 7px 7px#555;
+  box-shadow: -7px -7px 7px#555;
   border-radius: 30px;
+  height: 450px;
+  background-color: #c2b6b6;
+  margin-top: 10px;
+
 }
 
 .d-1-left {
-  /* background-color: lightcoral; */
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  width: 200px; 
+  margin-top: 10px;
+  margin-left: 10px;
+  width: 198px; 
+  height: 300px;
 }
 
 .d-1-1 {
-  /* background-color: lawngreen; */
-  height: 50px;
+  height: 30px;
   display: flex;
   align-items: center;
   margin: 20px;
@@ -153,7 +157,6 @@ body {
 }
 
 .d-1-2 {
-  /* background-color: rgb(101, 176, 195); */
   height: 50px;
   display: flex;
   align-items: center;
@@ -163,8 +166,7 @@ body {
 
 
  .d-1-3 {
-  /* background-color:greenyellow ; */
-  height: 60px;
+   height: 60px;
   display: flex;
   justify-content: center;
   margin-left: 20px;
@@ -174,7 +176,6 @@ body {
 } 
 
  .numero {
-
   display: inline-block;
   width: 30px;
   height: 40px;
@@ -185,15 +186,15 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 } 
 
+ /*--------------------- monitor ---------------- */
  .pisca {
   animation-name: pisca;
   animation-duration: 1s;
-    animation-iteration-count:infinite ;
+  animation-iteration-count:infinite ;
 } 
 
 .d-1-4 {
-  /* background-color: red; */
-  flex: 1;
+   flex: 1;
   display: flex;
   align-items: center;
   line-height: 30px;
@@ -203,18 +204,52 @@ body {
 }
 
 .d-1-right {
-  /* background-color: crimson; */
-  width: 90px;
-  height: 30px;
-  display: inline-block;
-  display: flex;
-  position: relative; 
-  
+  width: 150px;
+  height: 270px;
+  position: absolute; 
+  margin: 60px 5px 200px 220px;
+  font-size: 14px;
+   
   
 }
-.d-1-image img{
+ .d-1-image1 {
+  height: 100px;
+  width: 200px; 
   
+} 
+
+ .d-1-image2 {
+  height: 100px;
+  width: 100px;
+  margin-left:0px;
+  margin-top: 20px;
+ 
+ } 
+
+ .d-1-image1 img,
+ .d-1-image2 img{
+  border: 5px dashed white;
+ }
+
+ .small{
+  width: 70%;
+  font-size: 100%;
+ }
+
+
+ 
+
+
+.imag01{
   position: absolute;
+  float: right;
+  margin-top: 20px;
+  margin-left: 300px;
+  margin-top: 30px;
+  width: 100px;
+  height: 100px;
+  border: 2px solid red;
+  background-color: #555;
 }
 
 .div--2 {
@@ -226,3 +261,4 @@ body {
   margin-bottom: 10px;
 line-height: 18px;
 }
+
